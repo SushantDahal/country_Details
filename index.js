@@ -67,9 +67,6 @@ searchButton.addEventListener("click", () => {
       <div/>
       `;
       } else {
-        if (countryName.value.length < 0) {
-          result.classList.add("empty");
-        }
         countryName.classList.add("error");
         setTimeout(() => {
           countryName.classList.remove("error");
