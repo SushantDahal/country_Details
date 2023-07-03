@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  background-color: rgb(102, 102, 235);
+}
+
+.container {
+  min-width: 350px;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 30px 10px;
+  transform: translate(-50%, -50%);
+}
+
+.search-wrapper input {
+  padding: 8px 2px 4px 12px;
+  color: blue;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: 0;
+  font-size: 18px;
+}
+
+::placeholder {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: blue;
+}
+
+.search-wrapper button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  margin-left: 1px;
+  background-color: rgb(102, 102, 235);
+  transition: 0.3s;
+  outline: 0;
+}
+.search-wrapper button:hover {
+  background-color: rgb(32, 32, 170);
+  transition: 0.3s;
+  color: white;
+}
+
+.country_name {
+  text-align: center;
+  font-family: monospace;
+  margin-bottom: 20px;
+  color: blue;
+}
+
+.flag-img {
+  width: 45%;
+  min-width: 8rem;
+  display: block;
+  margin: 2rem auto 1rem auto;
+  transition: max-height 1s;
+}
+.container h4 {
+  display: inline;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  color: grey;
+}
+.container span {
+  font-size: 13px;
+  color: gray;
+  letter-spacing: 1.5px;
+  margin-left: 6px;
+
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  margin: 8px 0 0 0;
+}
+.data-wrapper h4 {
+  text-align: left;
+  color: black;
+}
+
+.error {
+  animation: shake 0.2s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-3px);
+    border-color: 4px solid red;
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-2px);
+    border-color: red;
+  }
+  100% {
+    transform: translateX(0px);
+    border-color: red;
+  }
+}
